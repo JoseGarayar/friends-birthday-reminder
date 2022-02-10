@@ -1,0 +1,9 @@
+# Virtual environment
+venv
+
+# Google Calendar credentials
+credentials.json
+token.json
+
+# Excel
+DrinkTim.xlsx
