@@ -85,7 +85,8 @@ def read_excel():
             'state': row[7].value
         }
         list_friends.append(new_dict)
-        emails.append({'email': row[5].value})
+        if row[5].value:
+            emails.append({'email': row[5].value})
     return list_friends, emails
 
 if __name__ == '__main__':
