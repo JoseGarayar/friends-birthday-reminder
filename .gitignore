@@ -2,8 +2,9 @@
 venv
 
 # Google Calendar credentials
-credentials.json
-token.json
+config/*
+!config/*.example.*
 
-# Excel
-DrinkTim.xlsx
+# CSV data
+data/*
+!data/*.example.*
