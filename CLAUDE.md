@@ -9,10 +9,8 @@ A Python script that reads friend birthday data from a CSV file and creates recu
 ## Setup & Run
 
 ```bash
-# Install dependencies (requires Python >=3.14)
-pip install -e .
-# Or with requirements.txt
-pip install -r requirements.txt
+# Install dependencies (requires Python >=3.14 and uv)
+uv sync
 
 # Copy example files and fill in real data
 cp config/credentials.example.json config/credentials.json
@@ -21,7 +19,7 @@ cp data/birthdays.example.csv data/birthdays.csv
 cp data/attendees.example.csv data/attendees.csv
 
 # Run the script
-python src/app.py
+uv run src/app.py
 ```
 
 On first run, it opens a browser for Google OAuth and saves the token for subsequent runs.

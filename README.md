@@ -4,9 +4,9 @@ A Python script that creates recurring Google Calendar events for your friends' 
 
 ## Setup
 
-1. **Install dependencies** (requires Python >= 3.14):
+1. **Install dependencies** (requires Python >= 3.14 and [uv](https://docs.astral.sh/uv/)):
    ```bash
-   pip install -e .
+   uv sync
    ```
 
 2. **Configure Google Calendar API**:
@@ -37,7 +37,7 @@ A Python script that creates recurring Google Calendar events for your friends' 
 ## Usage
 
 ```bash
-python src/app.py
+uv run src/app.py
 ```
 
 On first run, a browser window will open for Google OAuth authorization. The token is saved to `config/token.json` for subsequent runs.
