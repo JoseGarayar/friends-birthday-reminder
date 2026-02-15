@@ -1,7 +1,7 @@
 [project]
 name = "friends-birthday-reminder"
 version = "0.1.0"
-description = ""
+description = "A Python script that reads friend birthday data from a CSV file and creates recurring yearly Google Calendar events with email/popup reminders."
 readme = "README.md"
 requires-python = ">=3.14,<3.15"
 dependencies = [
